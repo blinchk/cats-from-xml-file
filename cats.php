@@ -47,6 +47,8 @@ function print_cats($cats) {
     <title>Cats from XML table</title>
 </head>
 <body>
+<h1>XML PHP arvestus</h1>
+<hr>
 <table>
     <th colspan="2">Cats</th>
     <?php
