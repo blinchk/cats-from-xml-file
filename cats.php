@@ -27,12 +27,19 @@ function filter_afterbirthyear_string_length($cat) {
 $yeartwentyten_cats = array_filter($sorted_cats, 'filter_birthyear_condition');
 $myfilter_cats = array_filter($sorted_cats, 'filter_afterbirthyear_string_length');
 
-function print_cats($cats) {
+function print_cats_as_table_element($cats) {
     foreach($cats as $cat) {
         echo "<tr>";
         echo "<td><strong>$cat->name</strong></td>";
         echo "<td>Sünniaasta: $cat->birthyear</td>";
         echo "</tr>";
+    }
+}
+
+function print_cats_as_text($cats) {
+    foreach($cats as $cat) {
+        echo "<h1>$cat->name</h1>";
+        echo "<p>Sünniaasta: $cat->birthyear</p>";
     }
 }
 ?>
@@ -49,31 +56,27 @@ function print_cats($cats) {
 <body>
 <h1>XML PHP arvestus</h1>
 <hr>
+<?php
+print_cats_as_text($cats);
+?>
+<hr>
+<?php
+print_cats_as_text($sorted_cats);
+?>
+<hr>
+<h1>Cats, born in year 2010</h1>
 <table>
-    <th colspan="2">Cats</th>
+    <tr><th>Name</th><th>Year of birth</th></tr>
     <?php
-    print_cats($cats);
+    print_cats_as_table_element($yeartwentyten_cats);
     ?>
 </table>
 <hr>
+<h1>Cats, born after year 2016 with less than 6 characters in the name, also N should be first character in the name. Display as table.</h1>
 <table>
-    <th colspan="2">Sorted cats</th>
+    <tr><th>Name</th><th>Year of birth</th></tr>
     <?php
-    print_cats($sorted_cats);
-    ?>
-</table>
-<hr>
-<table>
-    <th colspan="2">Cats, born in year 2010</th>
-    <?php
-    print_cats($yeartwentyten_cats);
-    ?>
-</table>
-<hr>
-<table>
-    <th colspan="2">Cats, born after year 2016 with less than 6 characters in the name, also N should be first character in the name.</th>
-    <?php
-    print_cats($myfilter_cats);
+    print_cats_as_table_element($myfilter_cats);
     ?>
 </table>
 <hr>
