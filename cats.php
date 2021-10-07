@@ -56,6 +56,7 @@ function print_cats($cats) {
     print_cats($yeartwentyten_cats);
     ?>
 </table>
+<hr>
 <footer>
     <a href="https://github.com/blinchk/cats-from-xml-file">GitHub Link</a>
 </footer>
