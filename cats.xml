@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cats>
+    <cat>
+        <id>0</id>
+        <name>Tofu</name>
+        <birthyear>2021</birthyear>
+    </cat>
+    <cat>
+        <id>1</id>
+        <name>Ghost</name>
+        <birthyear>2019</birthyear>
+    </cat>
+    <cat>
+        <id>2</id>
+        <name>Nur</name>
+        <birthyear>2017</birthyear>
+    </cat>
+    <cat>
+        <id>3</id>
+        <name>Frost</name>
+        <birthyear>2021</birthyear>
+    </cat>
+    <cat>
+        <id>4</id>
+        <name>Snowy</name>
+        <birthyear>2015</birthyear>
+    </cat>
+    <cat>
+        <id>5</id>
+        <name>Niah</name>
+        <birthyear>2016</birthyear>
+    </cat>
+    <cat>
+        <id>6</id>
+        <name>Nel</name>
+        <birthyear>2010</birthyear>
+    </cat>
+    <cat>
+        <id>7</id>
+        <name>Birch</name>
+        <birthyear>2018</birthyear>
+    </cat>
+    <cat>
+        <id>8</id>
+        <name>Mc Social</name>
+        <birthyear>2019</birthyear>
+    </cat>
+    <cat>
+        <id>9</id>
+        <name>Zebra</name>
+        <birthyear>2010</birthyear>
+    </cat>
+</cats>
